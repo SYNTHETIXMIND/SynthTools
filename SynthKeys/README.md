@@ -4,7 +4,7 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         a7695d50-224f-4889-8b6a-90d367089fb2
-  @version     0.1.1.2
+  @version     0.1.1.3
   @created     2026-10-23
   @updated     2026-10-23
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
@@ -29,7 +29,7 @@ More information: [synthetixmind.com](https://synthetixmind.com/tools.php?utm_so
 
 **[Download SynthKeys 1.0.1 for Windows](https://synthetixmind.com/downloads/SynthKeys/SynthKeys_1.0.1_x64-setup.exe)** (1.3 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthKeys/SynthKeys_1.0.1_x64-setup.exe.sha256): `09bf6196efef40daacc515f27c2fa818ce6602d6eb977eb0600cba35b0e83c8e`
 
-Older versions and release assets: [Releases](https://github.com/SYNTHETIXMIND/SynthTools/releases). It installs per user and needs no administrator rights.
+The installer sets SynthKeys up for your Windows user and needs no administrator rights. Older versions and release assets: [Releases](https://github.com/SYNTHETIXMIND/SynthTools/releases).
 
 > The installer is not code-signed yet. Windows SmartScreen may ask you to confirm ("More info" → "Run anyway").
 
