@@ -1,0 +1,6 @@
+# Local secrets and build leftovers never belong in this public repo
+.env
+.env.*
+*.key
+*.pem
+credentials.xml
