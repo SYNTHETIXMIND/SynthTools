@@ -4,9 +4,9 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         a7695d50-224f-4889-8b6a-90d367089fb2
-  @version     0.1.1.3
+  @version     0.1.2.4
   @created     2026-10-23
-  @updated     2026-10-23
+  @updated     2026-10-24
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
 -->
 
@@ -14,7 +14,7 @@
 
 **A text expander for Windows.** Type a short trigger such as `#sig` followed by a space, Enter or punctuation mark in any app, and SynthKeys replaces it with your signature, phrase or template.
 
-More information: [synthetixmind.com](https://synthetixmind.com/tools.php?utm_source=SynthKeys&utm_medium=github&utm_campaign=SynthKeys)
+More information: [synthetixmind.com](https://synthetixmind.com/pages/tools.php?utm_source=SynthKeys&utm_medium=github&utm_campaign=SynthKeys)
 
 ## Features
 

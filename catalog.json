@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "generated": "2026-10-24T12:00:00Z",
+  "tools": [
+    {
+      "id": "synthkeys",
+      "name": "SynthKeys",
+      "productName": "SynthKeys",
+      "tagline": "Text expander for signatures, phrases and templates",
+      "description": "Type a short trigger such as #sig in any app and SynthKeys replaces it with your text. Tray app, AutoHotkey import, snippet chains.",
+      "color": "#5b4cf0",
+      "homepage": "https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthKeys",
+      "version": "1.0.1",
+      "pubDate": "2026-10-23",
+      "notes": "• Start menu entry can be switched on or off in Settings\n• Snippet chains with {snippet:#trigger}\n• Export (SynthKeys JSON, AutoHotkey v2) and JSON import\n• Sample snippets with safe removal (backup first)",
+      "url": "https://synthetixmind.com/downloads/SynthKeys/SynthKeys_1.0.1_x64-setup.exe",
+      "sha256": "09bf6196efef40daacc515f27c2fa818ce6602d6eb977eb0600cba35b0e83c8e",
+      "size": 1389348
+    }
+  ]
+}

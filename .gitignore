@@ -1,6 +1,155 @@
-# Local secrets and build leftovers never belong in this public repo
+# ---------------------------------------------------------------------------
+# @file        .gitignore
+# @description Git ignore rules for the Email Warmup System
+# @author      Thomas Dobler - SYNTHETIXMIND LTD
+# @uid         b2c3d4e5-giti-4f60-b7c8-d9e0f1a2b3c4
+# @version     0.0.0.3
+# @created     2026-05-08
+# @updated     2026-05-18
+# @copyright   (c) 2026 by SYNTHETIXMIND LTD
+# ---------------------------------------------------------------------------
+
+# Keep core repo files tracked
+!.gitattributes
+!README.md
+!LICENSE
+!/assets
+!/docs
+
+# ── Secrets & environment ──────────────────────────────────────────────────
 .env
 .env.*
+!.mcp.json
+!.env.example
 *.key
 *.pem
+*.p12
+*.pfx
+secrets/
+**/.venv/
+
+# ── Claude Settings
+──────────────────────────────────────────────────
+!.claude/
+!.claude/**
+
+# ── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# ── Node / JavaScript ──────────────────────────────────────────────────────
+node_modules/
+*.tsbuildinfo
+
+# ── Docker ─────────────────────────────────────────────────────────────────
+# Keep docker-compose.yml but ignore local override files
+docker-compose.override.yml
+docker-compose.local.yml
+
+# ── Database ───────────────────────────────────────────────────────────────
+# Never commit migration auto-generated temp files
+db/migrations/versions/*.pyc
+
+# ── Logs & runtime output ──────────────────────────────────────────────────
+*.log
+logs/
+*.out
+
+# ── OS artefacts ───────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── IDEs & editors ─────────────────────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ── BMAD ───────────────────────────────────────────────────────────────────
+_bmad-output/
+_bmad/**/*.user.toml
+# NO BARE `tests/` RULE HERE, AND NONE MAY BE ADDED.
+#
+# There was one, on this line, and it propagated to every sync target. A bare
+# `tests/` matches at EVERY depth, so in any target that keeps its own suite it
+# swallows that suite. LandingSmith is the worked example: it took
+# `tests/verification/` — the deploy gate's entire suite. Specs that predated the
+# rule stayed tracked (gitignore does not affect tracked files) so nothing looked
+# wrong, while every spec written afterwards existed on one machine only. Its
+# vitest config named two of them, so a fresh clone would have run a smaller gate
+# and reported it green.
+#
+# If BMAD test scaffolding needs ignoring, scope it to the directory that
+# actually needs it — as the rule below now does — never a bare `tests/`.
+#
+# This is what the bare rule was actually covering: six pytest files in four
+# bmad skills. Scoped here so behaviour is unchanged for them, while a target's
+# own `tests/` directory is no longer collateral. Remove this line if those
+# tests should ship with the skills.
+.claude/skills/*/scripts/tests/
+# _bmad/**
+
+# ── oh-my-design
+!/.omd
+# !/.omd
+
+
+# ── Project-specific scripts (local dev only) ──────────────────────────────
+notify.ps1
+!P7_GitHubGitHelper.ps1
+credentials.txt
+/docs/credentials.txt
 credentials.xml
+/docs/credentials.xml
+/projectfiles/credentials
+settings.local.json
+/.claude/settings.local.json
+
+#/.claude/scripts/**
+
+
+# ── Secrets — never commit ─────────────────────────────────────────────────
+projectfiles/credentials/
+credentials.xml
+credentials.txt
+
+# ── Github — never commit ─────────────────────────────────────────────────
+./.git
+./.github
+# !./.github
+
+# ── Obsidian config files — never commit ─────────────────────────────────────────────────
+projectfiles/obsidian/.obsidian/workspace.json
+projectfiles/obsidian/.obsidian/appearance.json
