@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-24T12:00:00Z",
+  "generated": "2026-10-24T13:00:00Z",
   "tools": [
     {
       "id": "synthkeys",
@@ -15,7 +15,9 @@
       "notes": "• Start menu entry can be switched on or off in Settings\n• Snippet chains with {snippet:#trigger}\n• Export (SynthKeys JSON, AutoHotkey v2) and JSON import\n• Sample snippets with safe removal (backup first)",
       "url": "https://synthetixmind.com/downloads/SynthKeys/SynthKeys_1.0.1_x64-setup.exe",
       "sha256": "09bf6196efef40daacc515f27c2fa818ce6602d6eb977eb0600cba35b0e83c8e",
-      "size": 1389348
+      "size": 1389348,
+      "icon": "https://synthetixmind.com/downloads/SynthKeys/icon.png",
+      "iconSha256": "d1b5c80364afbfd5ee09b7b9fc52b293cd71626ff7c658d2fbeeb2a4b2d617c4"
     }
   ]
 }
