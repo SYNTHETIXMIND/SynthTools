@@ -1,0 +1,3 @@
+# Signed files: the Ed25519 signature covers the exact bytes — never convert line endings
+catalog.json -text
+catalog.json.sig -text
