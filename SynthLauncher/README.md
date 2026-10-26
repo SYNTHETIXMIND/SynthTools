@@ -4,9 +4,9 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         48f95a93-d432-42ae-af0c-9433281b6148
-  @version     0.1.0.1
+  @version     0.1.1.2
   @created     2026-10-24
-  @updated     2026-10-24
+  @updated     2026-10-26
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
 -->
 
@@ -26,13 +26,17 @@ More information: [synthetixmind.com](https://synthetixmind.com/pages/tools.php?
 
 ## Download
 
-**[Download SynthLauncher 0.1.0 for Windows](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_0.1.0_x64-setup.exe)** (1.9 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_0.1.0_x64-setup.exe.sha256): `ba37a5ad8969e16ee12709f134fcf7b2d8e45b6cdeb7d00d056ee342e44f7a73`
+**[Download SynthLauncher 0.1.1 for Windows](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_0.1.1_x64-setup.exe)** (1.9 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_0.1.1_x64-setup.exe.sha256): `ce36d1bf58ab543a69e24b50f45eb7d147d1b2724e34e93508d7cc472ad662df`
 
 The installer sets SynthLauncher up for your Windows user and needs no administrator rights.
 
 > The installer is not code-signed yet. Windows SmartScreen may ask you to confirm ("More info" → "Run anyway").
 
 ## Release notes
+
+### 0.1.1
+- Fix: the list no longer falls back to "Offline" when the server answers slowly (longer timeout + one retry)
+- Error messages now name the cause of a failed download
 
 ### 0.1.0
 - First release: SynthKeys catalog, install / update / open / uninstall, app icons, self-update

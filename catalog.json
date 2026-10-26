@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-26T10:37:01Z",
+  "generated": "2026-10-26T12:45:25Z",
   "tools": [
     {
       "id": "synthlauncher",
@@ -10,12 +10,12 @@
       "description": "One window for every SYNTHETIXMIND tool: install, update, open and uninstall, with signed downloads from synthetixmind.com.",
       "color": "#e4531b",
       "homepage": "https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthLauncher",
-      "version": "0.1.0",
-      "pubDate": "2026-10-24",
-      "notes": "• First release: install, update, open and uninstall SynthTools\n• App icons and self-update",
-      "url": "https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_0.1.0_x64-setup.exe",
-      "sha256": "ba37a5ad8969e16ee12709f134fcf7b2d8e45b6cdeb7d00d056ee342e44f7a73",
-      "size": 1942647,
+      "version": "0.1.1",
+      "pubDate": "2026-10-26",
+      "notes": "• Fix: the list no longer falls back to \"Offline\" when the server answers slowly (longer timeout + one retry)\n• Error messages now name the cause of a failed download",
+      "url": "https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_0.1.1_x64-setup.exe",
+      "sha256": "ce36d1bf58ab543a69e24b50f45eb7d147d1b2724e34e93508d7cc472ad662df",
+      "size": 1942786,
       "icon": "https://synthetixmind.com/downloads/SynthLauncher/icon.png",
       "iconSha256": "bb818e3ed51ab21f290329475d1eaef83297b8136757bd527f6d5f93e1f9639c"
     },
