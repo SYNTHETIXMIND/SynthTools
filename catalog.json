@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-24T10:13:26Z",
+  "generated": "2026-10-26T10:37:01Z",
   "tools": [
     {
       "id": "synthlauncher",
@@ -35,6 +35,40 @@
       "size": 1389348,
       "icon": "https://synthetixmind.com/downloads/SynthKeys/icon.png",
       "iconSha256": "d1b5c80364afbfd5ee09b7b9fc52b293cd71626ff7c658d2fbeeb2a4b2d617c4"
+    },
+    {
+      "id": "synthsize",
+      "name": "SynthSize",
+      "productName": "SynthSize",
+      "tagline": "Shows what fills your drives",
+      "description": "Scan a drive or folder, see every subfolder sorted by size, then open, copy, cut or delete the space hogs right from the tree.",
+      "color": "#0f9488",
+      "homepage": "https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthSize",
+      "version": "0.2.0",
+      "pubDate": "2026-10-26",
+      "notes": "• Item menu: open in Explorer, cut/copy to the clipboard, rename, delete, properties\n• Explorer context menu “Analyze with SynthSize”",
+      "url": "https://synthetixmind.com/downloads/SynthSize/SynthSize_0.2.0_x64-setup.exe",
+      "sha256": "eac9c5a54eced5dadfb7968e39cae118816baabcfc8ddfde96011919d4308f2a",
+      "size": 1288268,
+      "icon": "https://synthetixmind.com/downloads/SynthSize/icon.png",
+      "iconSha256": "fd23e115d91da81809156841f024cc8594308e0f76a998a9f8b7f3b1fc290bd9"
+    },
+    {
+      "id": "synthdiff",
+      "name": "SynthDiff",
+      "productName": "SynthDiff",
+      "tagline": "Compares two folders and shows what differs",
+      "description": "Pick two folders and see every file that is new, missing or changed. Copy items to the other side, cut, copy or delete them — one or many at a time.",
+      "color": "#fc551c",
+      "homepage": "https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthDiff",
+      "version": "0.1.0",
+      "pubDate": "2026-10-26",
+      "notes": "• First release: compare by size + date or byte by byte\n• Filters, multi-select, copy to the other side, cut/copy/delete, report",
+      "url": "https://synthetixmind.com/downloads/SynthDiff/SynthDiff_0.1.0_x64-setup.exe",
+      "sha256": "c2fc78407689dbf5e7d374985b553044ab0c715ec38250abef19fd5d800389e7",
+      "size": 1255923,
+      "icon": "https://synthetixmind.com/downloads/SynthDiff/icon.png",
+      "iconSha256": "e2b4880223727a3f407be39e5daab54b5636f2658661d186cba341f7e020a69c"
     }
   ]
 }

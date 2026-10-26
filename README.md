@@ -4,9 +4,9 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         5462a4ec-4431-49b7-bef4-611bc6c7a3cc
-  @version     0.3.1.4
+  @version     0.3.2.5
   @created     2026-10-23
-  @updated     2026-10-24
+  @updated     2026-10-26
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
 -->
 
@@ -20,6 +20,8 @@ This repository holds **no source code**, only release notes, update manifests a
 |------|----------|--------|
 | **SynthLauncher**: installs, updates and opens all SynthTools | Windows | [`SynthLauncher/`](SynthLauncher/README.md) |
 | **SynthKeys**: text expander for signatures and phrases | Windows | [`SynthKeys/`](SynthKeys/README.md) |
+| **SynthSize**: shows what fills your drives | Windows | [`SynthSize/`](SynthSize/README.md) |
+| **SynthDiff**: compares two folders and shows what differs | Windows | [`SynthDiff/`](SynthDiff/README.md) |
 
 ## Layout
 
