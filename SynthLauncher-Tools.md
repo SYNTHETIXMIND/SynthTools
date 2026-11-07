@@ -4,7 +4,7 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         5a5b7392-da1c-4849-965a-efd10dd9b0bd
-  @version     0.2.1.4
+  @version     0.2.1.5
   @created     2026-11-07
   @updated     2026-11-07
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
@@ -31,7 +31,7 @@ All tools: Windows 10/11 64-bit, per-user NSIS installer (no admin rights), publ
 
 ## Download names
 
-Download files keep a **fixed name without a version**: `https://synthetixmind.com/downloads/<Tool>/<Tool>_x64-setup.exe`, plus `<Tool>_x64-setup.exe.sha256` and `icon.png`. A new release overwrites the file, so links never change. The version lives only in the catalog, the Overviews and the release notes. The older versioned files (e.g. `SynthKeys_1.0.1_x64-setup.exe`) are still on the server and are no longer referenced.
+Download files keep a **fixed name without a version**: `https://synthetixmind.com/downloads/<Tool>/<Tool>_x64-setup.exe`, plus `<Tool>_x64-setup.exe.sha256` and `icon.png`. A new release overwrites the file, so links never change. The version lives only in the catalog, the Overviews and the release notes. The older versioned files (e.g. `SynthKeys_1.0.1_x64-setup.exe`) were removed from the server on 2026-11-07.
 
 ## About the checksums
 
