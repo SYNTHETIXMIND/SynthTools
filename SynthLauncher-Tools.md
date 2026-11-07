@@ -1,10 +1,10 @@
 <!--
   @file        SynthLauncher-Tools.md
-  @description All tools listed in SynthLauncher: description, version, download link, icon and SHA-256 checksums (keep in sync with catalog.json)
+  @description All tools listed in SynthLauncher: description, version, download link, icon, SHA-256 checksums and Defender exception commands (keep in sync with catalog.json)
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         5a5b7392-da1c-4849-965a-efd10dd9b0bd
-  @version     0.2.0.2
+  @version     0.2.1.3
   @created     2026-11-07
   @updated     2026-11-07
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
@@ -44,6 +44,26 @@ Download files keep a **fixed name without a version**: `https://synthetixmind.c
   ```
 
   The hash must equal the SHA-256 listed below (PowerShell prints it in upper case; the comparison ignores case).
+
+## Security settings to use (Windows Defender exception)
+
+If Windows Defender blocks or slows down a tool, exclude its install folder. Every tool installs per user into `%LOCALAPPDATA%\<Tool>`; SynthLauncher's folder also holds its downloaded installers (`%LOCALAPPDATA%\SynthLauncher\downloads`).
+
+1. Open **PowerShell as administrator** (right-click Start → Terminal (Admin)).
+2. Paste the line for the tool and press Enter.
+
+| Tool | Add exception |
+|------|---------------|
+| SynthLauncher | `Add-MpPreference -ExclusionPath (Join-Path $env:LOCALAPPDATA 'SynthLauncher')` |
+| SynthKeys | `Add-MpPreference -ExclusionPath (Join-Path $env:LOCALAPPDATA 'SynthKeys')` |
+| SynthSize | `Add-MpPreference -ExclusionPath (Join-Path $env:LOCALAPPDATA 'SynthSize')` |
+| SynthDiff | `Add-MpPreference -ExclusionPath (Join-Path $env:LOCALAPPDATA 'SynthDiff')` |
+| SynthWorks | `Add-MpPreference -ExclusionPath (Join-Path $env:LOCALAPPDATA 'SynthWorks')` |
+
+- Show all exceptions: `(Get-MpPreference).ExclusionPath`
+- Remove one again: the same line with `Remove-MpPreference` instead of `Add-MpPreference`.
+- An exception means Defender no longer scans files in that folder. Add it only for tools installed from synthetixmind.com.
+- From SynthLauncher 0.1.2 on, every card has a collapsed **Security settings to use** section with these commands and a Copy button (for an installed tool it uses the actual install folder from the registry).
 
 ---
 
