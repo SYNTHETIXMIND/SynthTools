@@ -4,7 +4,7 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         5a5b7392-da1c-4849-965a-efd10dd9b0bd
-  @version     0.2.1.3
+  @version     0.2.1.4
   @created     2026-11-07
   @updated     2026-11-07
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
@@ -14,14 +14,14 @@
 
 Every tool that SynthLauncher installs, updates and opens, with its download link, icon and checksums.
 
-**Source of truth:** the signed catalog `https://synthetixmind.com/downloads/catalog.json` (copy: `C:\GitHub\SynthTools\catalog.json`, generated 2026-11-07T16:14:27Z).
+**Source of truth:** the signed catalog `https://synthetixmind.com/downloads/catalog.json` (copy: `C:\GitHub\SynthTools\catalog.json`, generated 2026-11-07T17:15:44Z).
 **Last checked:** 2026-11-07. Every installer, `.sha256` file and icon below answered HTTP 200. Every downloaded installer and icon matched the size and SHA-256 in the catalog exactly, and the live catalog is byte-identical to the SynthTools copy.
 
 ## Overview
 
 | Tool | Version | Released | Category | Installer size | Purpose |
 |------|---------|----------|----------|----------------|---------|
-| [SynthLauncher](#synthlauncher) | 0.1.1 | 2026-10-26 | Utilities | 1,942,786 bytes | Installs, updates and opens all SynthTools |
+| [SynthLauncher](#synthlauncher) | 0.1.2 | 2026-11-07 | Utilities | 1,943,689 bytes | Installs, updates and opens all SynthTools |
 | [SynthKeys](#synthkeys) | 1.0.1 | 2026-10-23 | Productivity | 1,389,348 bytes | Text expander for signatures, phrases and templates |
 | [SynthSize](#synthsize) | 0.2.0 | 2026-10-26 | Utilities | 1,288,268 bytes | Shows what fills your drives |
 | [SynthDiff](#synthdiff) | 0.1.0 | 2026-10-26 | Utilities | 1,255,923 bytes | Compares two folders and shows what differs |
@@ -63,7 +63,7 @@ If Windows Defender blocks or slows down a tool, exclude its install folder. Eve
 - Show all exceptions: `(Get-MpPreference).ExclusionPath`
 - Remove one again: the same line with `Remove-MpPreference` instead of `Add-MpPreference`.
 - An exception means Defender no longer scans files in that folder. Add it only for tools installed from synthetixmind.com.
-- From SynthLauncher 0.1.2 on, every card has a collapsed **Security settings to use** section with these commands and a Copy button (for an installed tool it uses the actual install folder from the registry).
+- Since SynthLauncher 0.1.2, every card has a collapsed **Security settings to use** section with these commands and a Copy button (for an installed tool it uses the actual install folder from the registry).
 
 ---
 
@@ -73,11 +73,11 @@ If Windows Defender blocks or slows down a tool, exclude its install folder. Eve
 
 | | |
 |---|---|
-| Version | 0.1.1 (2026-10-26) |
+| Version | 0.1.2 (2026-11-07) |
 | Installer | https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_x64-setup.exe |
 | SHA-256 file | https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_x64-setup.exe.sha256 |
-| SHA-256 | `ce36d1bf58ab543a69e24b50f45eb7d147d1b2724e34e93508d7cc472ad662df` |
-| Size | 1.9 MB (1,942,786 bytes) |
+| SHA-256 | `73bddffca19b3e9a6730058907cc4130a3c00449d88cf8460506f283b4d8a9d0` |
+| Size | 1.9 MB (1,943,689 bytes) |
 | Icon | https://synthetixmind.com/downloads/SynthLauncher/icon.png |
 | Icon SHA-256 | `bb818e3ed51ab21f290329475d1eaef83297b8136757bd527f6d5f93e1f9639c` |
 | Product page | https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthLauncher |
@@ -90,6 +90,10 @@ SynthLauncher is one window for every SYNTHETIXMIND SynthTool on Windows. It lis
 - **Clean uninstall:** runs the tool's own uninstaller and waits until Windows no longer lists the tool.
 - **Offline mode:** uses the last verified catalog, checked again before use.
 - **Self-update:** a banner offers "Update and restart" when a new SynthLauncher is available.
+
+Release notes 0.1.2:
+- New on every tool card: "Security settings to use" with copy-ready PowerShell commands for a Windows Defender exception (add, show, remove).
+- All downloads now use fixed file names.
 
 Release notes 0.1.1:
 - Fix: the list no longer falls back to "Offline" when the server answers slowly (longer timeout + one retry).

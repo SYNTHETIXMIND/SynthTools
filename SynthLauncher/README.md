@@ -4,7 +4,7 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         48f95a93-d432-42ae-af0c-9433281b6148
-  @version     0.1.1.3
+  @version     0.1.1.4
   @created     2026-10-24
   @updated     2026-11-07
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
@@ -26,13 +26,17 @@ More information: [synthetixmind.com](https://synthetixmind.com/pages/tools.php?
 
 ## Download
 
-**[Download SynthLauncher 0.1.1 for Windows](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_x64-setup.exe)** (1.9 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_x64-setup.exe.sha256): `ce36d1bf58ab543a69e24b50f45eb7d147d1b2724e34e93508d7cc472ad662df`
+**[Download SynthLauncher 0.1.2 for Windows](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_x64-setup.exe)** (1.9 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_x64-setup.exe.sha256): `73bddffca19b3e9a6730058907cc4130a3c00449d88cf8460506f283b4d8a9d0`
 
 The installer sets SynthLauncher up for your Windows user and needs no administrator rights.
 
 > The installer is not code-signed yet. Windows SmartScreen may ask you to confirm ("More info" → "Run anyway").
 
 ## Release notes
+
+### 0.1.2
+- New on every tool card: "Security settings to use" with copy-ready PowerShell commands for a Windows Defender exception (add, show, remove)
+- All downloads now use fixed file names
 
 ### 0.1.1
 - Fix: the list no longer falls back to "Offline" when the server answers slowly (longer timeout + one retry)
