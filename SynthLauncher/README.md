@@ -4,9 +4,9 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         48f95a93-d432-42ae-af0c-9433281b6148
-  @version     0.1.1.2
+  @version     0.1.1.3
   @created     2026-10-24
-  @updated     2026-10-26
+  @updated     2026-11-07
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
 -->
 
@@ -26,7 +26,7 @@ More information: [synthetixmind.com](https://synthetixmind.com/pages/tools.php?
 
 ## Download
 
-**[Download SynthLauncher 0.1.1 for Windows](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_0.1.1_x64-setup.exe)** (1.9 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_0.1.1_x64-setup.exe.sha256): `ce36d1bf58ab543a69e24b50f45eb7d147d1b2724e34e93508d7cc472ad662df`
+**[Download SynthLauncher 0.1.1 for Windows](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_x64-setup.exe)** (1.9 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_x64-setup.exe.sha256): `ce36d1bf58ab543a69e24b50f45eb7d147d1b2724e34e93508d7cc472ad662df`
 
 The installer sets SynthLauncher up for your Windows user and needs no administrator rights.
 

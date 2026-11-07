@@ -4,9 +4,9 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         2d9d6ba7-c2b6-42d1-ab6d-9bec75867958
-  @version     0.2.0.1
+  @version     0.2.0.2
   @created     2026-10-26
-  @updated     2026-10-26
+  @updated     2026-11-07
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
 -->
 
@@ -25,7 +25,7 @@ More information: [synthetixmind.com](https://synthetixmind.com/pages/tools.php?
 
 ## Download
 
-**[Download SynthSize 0.2.0 for Windows](https://synthetixmind.com/downloads/SynthSize/SynthSize_0.2.0_x64-setup.exe)** (1.2 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthSize/SynthSize_0.2.0_x64-setup.exe.sha256): `eac9c5a54eced5dadfb7968e39cae118816baabcfc8ddfde96011919d4308f2a`
+**[Download SynthSize 0.2.0 for Windows](https://synthetixmind.com/downloads/SynthSize/SynthSize_x64-setup.exe)** (1.2 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthSize/SynthSize_x64-setup.exe.sha256): `eac9c5a54eced5dadfb7968e39cae118816baabcfc8ddfde96011919d4308f2a`
 
 The installer sets SynthSize up for your Windows user and needs no administrator rights. You can also install it from SynthLauncher.
 

@@ -4,9 +4,9 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         529dabed-955a-4808-bcf5-f6a7ce5afa98
-  @version     0.1.0.1
+  @version     0.1.0.2
   @created     2026-10-26
-  @updated     2026-10-26
+  @updated     2026-11-07
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
 -->
 
@@ -25,7 +25,7 @@ More information: [synthetixmind.com](https://synthetixmind.com/pages/tools.php?
 
 ## Download
 
-**[Download SynthDiff 0.1.0 for Windows](https://synthetixmind.com/downloads/SynthDiff/SynthDiff_0.1.0_x64-setup.exe)** (1.2 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthDiff/SynthDiff_0.1.0_x64-setup.exe.sha256): `c2fc78407689dbf5e7d374985b553044ab0c715ec38250abef19fd5d800389e7`
+**[Download SynthDiff 0.1.0 for Windows](https://synthetixmind.com/downloads/SynthDiff/SynthDiff_x64-setup.exe)** (1.2 MB) · [SHA-256](https://synthetixmind.com/downloads/SynthDiff/SynthDiff_x64-setup.exe.sha256): `c2fc78407689dbf5e7d374985b553044ab0c715ec38250abef19fd5d800389e7`
 
 The installer sets SynthDiff up for your Windows user and needs no administrator rights. You can also install it from SynthLauncher.
 

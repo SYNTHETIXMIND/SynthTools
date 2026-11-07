@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-26T12:45:25Z",
+  "generated": "2026-11-07T16:14:27Z",
   "tools": [
     {
       "id": "synthlauncher",
@@ -13,7 +13,7 @@
       "version": "0.1.1",
       "pubDate": "2026-10-26",
       "notes": "• Fix: the list no longer falls back to \"Offline\" when the server answers slowly (longer timeout + one retry)\n• Error messages now name the cause of a failed download",
-      "url": "https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_0.1.1_x64-setup.exe",
+      "url": "https://synthetixmind.com/downloads/SynthLauncher/SynthLauncher_x64-setup.exe",
       "sha256": "ce36d1bf58ab543a69e24b50f45eb7d147d1b2724e34e93508d7cc472ad662df",
       "size": 1942786,
       "icon": "https://synthetixmind.com/downloads/SynthLauncher/icon.png",
@@ -30,7 +30,7 @@
       "version": "1.0.1",
       "pubDate": "2026-10-23",
       "notes": "• Start menu entry can be switched on or off in Settings\n• Snippet chains with {snippet:#trigger}\n• Export (SynthKeys JSON, AutoHotkey v2) and JSON import\n• Sample snippets with safe removal (backup first)",
-      "url": "https://synthetixmind.com/downloads/SynthKeys/SynthKeys_1.0.1_x64-setup.exe",
+      "url": "https://synthetixmind.com/downloads/SynthKeys/SynthKeys_x64-setup.exe",
       "sha256": "09bf6196efef40daacc515f27c2fa818ce6602d6eb977eb0600cba35b0e83c8e",
       "size": 1389348,
       "icon": "https://synthetixmind.com/downloads/SynthKeys/icon.png",
@@ -47,7 +47,7 @@
       "version": "0.2.0",
       "pubDate": "2026-10-26",
       "notes": "• Item menu: open in Explorer, cut/copy to the clipboard, rename, delete, properties\n• Explorer context menu “Analyze with SynthSize”",
-      "url": "https://synthetixmind.com/downloads/SynthSize/SynthSize_0.2.0_x64-setup.exe",
+      "url": "https://synthetixmind.com/downloads/SynthSize/SynthSize_x64-setup.exe",
       "sha256": "eac9c5a54eced5dadfb7968e39cae118816baabcfc8ddfde96011919d4308f2a",
       "size": 1288268,
       "icon": "https://synthetixmind.com/downloads/SynthSize/icon.png",
@@ -64,11 +64,28 @@
       "version": "0.1.0",
       "pubDate": "2026-10-26",
       "notes": "• First release: compare by size + date or byte by byte\n• Filters, multi-select, copy to the other side, cut/copy/delete, report",
-      "url": "https://synthetixmind.com/downloads/SynthDiff/SynthDiff_0.1.0_x64-setup.exe",
+      "url": "https://synthetixmind.com/downloads/SynthDiff/SynthDiff_x64-setup.exe",
       "sha256": "c2fc78407689dbf5e7d374985b553044ab0c715ec38250abef19fd5d800389e7",
       "size": 1255923,
       "icon": "https://synthetixmind.com/downloads/SynthDiff/icon.png",
       "iconSha256": "e2b4880223727a3f407be39e5daab54b5636f2658661d186cba341f7e020a69c"
+    },
+    {
+      "id": "synthworks",
+      "name": "SynthWorks",
+      "productName": "SynthWorks",
+      "tagline": "Slim workspace for project folders with terminals and editor",
+      "description": "Workfolders in a sidebar, one tab per folder with PowerShell terminals, Claude Code buttons, a file panel and a basic editor. Closing it ends every program it started.",
+      "color": "#fa5800",
+      "homepage": "https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthWorks",
+      "version": "0.2.1",
+      "pubDate": "2026-11-07",
+      "notes": "• Fix: Ctrl+V and right-click paste insert the text once in the terminal (Ctrl+V pasted twice)\n• The version is shown in the window title and next to \"SynthWorks\" in the sidebar",
+      "url": "https://synthetixmind.com/downloads/SynthWorks/SynthWorks_x64-setup.exe",
+      "sha256": "e0f5121fddc5433d26ae3afaa93d8b8541e412dbd0cde7ae9905c36d5fab4e48",
+      "size": 2164058,
+      "icon": "https://synthetixmind.com/downloads/SynthWorks/icon.png",
+      "iconSha256": "8813e0c12e3abba8fb942a4b1b7c57f314a9383c6c700480cd80304deb4830f5"
     }
   ]
 }
