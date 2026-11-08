@@ -4,9 +4,9 @@
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         5462a4ec-4431-49b7-bef4-611bc6c7a3cc
-  @version     0.3.2.5
+  @version     0.3.3.6
   @created     2026-10-23
-  @updated     2026-10-26
+  @updated     2026-11-08
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
 -->
 
@@ -22,6 +22,10 @@ This repository holds **no source code**, only release notes, update manifests a
 | **SynthKeys**: text expander for signatures and phrases | Windows | [`SynthKeys/`](SynthKeys/README.md) |
 | **SynthSize**: shows what fills your drives | Windows | [`SynthSize/`](SynthSize/README.md) |
 | **SynthDiff**: compares two folders and shows what differs | Windows | [`SynthDiff/`](SynthDiff/README.md) |
+| **SynthWorks**: slim workspace for project folders with terminals and editor | Windows | [`SynthWorks/`](SynthWorks/README.md) |
+| **SynthChoco**: manage Chocolatey packages in one window | Windows | [`SynthChoco/`](SynthChoco/README.md) |
+
+All tools, links, checksums and Chocolatey install commands: [SynthLauncher-Tools.md](SynthLauncher-Tools.md).
 
 ## Layout
 

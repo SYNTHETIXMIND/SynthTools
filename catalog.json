@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-11-07T17:15:44Z",
+  "generated": "2026-11-08T15:30:20Z",
   "tools": [
     {
       "id": "synthlauncher",
@@ -86,6 +86,23 @@
       "size": 2164058,
       "icon": "https://synthetixmind.com/downloads/SynthWorks/icon.png",
       "iconSha256": "8813e0c12e3abba8fb942a4b1b7c57f314a9383c6c700480cd80304deb4830f5"
+    },
+    {
+      "id": "synthchoco",
+      "name": "SynthChoco",
+      "productName": "SynthChoco",
+      "tagline": "Manage Chocolatey packages in one window",
+      "description": "Install, update, remove and scan Chocolatey packages with one click, and watch every command run live. Export and import package lists, and install SYNTHETIXMIND tools straight from the SYNTHETIXMIND repository.",
+      "color": "#e2501d",
+      "homepage": "https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthChoco",
+      "version": "0.3.1",
+      "pubDate": "2026-11-08",
+      "notes": "• First release: installed, outdated and search views, upgrade all, live console\n• Welcome screen with Chocolatey status and one-click Chocolatey install\n• SYNTHETIXMIND view: every package from the SYNTHETIXMIND repository with Install and Update\n• Export and import package lists, Windows Defender scan per package\n• Light and dark theme",
+      "url": "https://synthetixmind.com/downloads/SynthChoco/SynthChoco_x64-setup.exe",
+      "sha256": "4addbe50ec36eb409f2b8886c7abd2081ea07ebf750b5c5bc8b05001c78bf5c2",
+      "size": 1431730,
+      "icon": "https://synthetixmind.com/downloads/SynthChoco/icon.png",
+      "iconSha256": "dd76012489699a4a36a8434d00c51ec624d3997d19900852e73159a12af64e80"
     }
   ]
 }

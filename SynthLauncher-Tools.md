@@ -1,21 +1,21 @@
 <!--
   @file        SynthLauncher-Tools.md
-  @description All tools listed in SynthLauncher: description, version, download link, icon, SHA-256 checksums and Defender exception commands (keep in sync with catalog.json)
+  @description All tools listed in SynthLauncher: description, version, download link, icon, SHA-256 checksums, Chocolatey install commands and Defender exception commands (keep in sync with catalog.json)
   @author      Thomas Dobler - SYNTHETIXMIND LTD
   @email       tom@synthetixmind.com
   @uid         5a5b7392-da1c-4849-965a-efd10dd9b0bd
-  @version     0.2.1.5
+  @version     0.3.0.6
   @created     2026-11-07
-  @updated     2026-11-07
+  @updated     2026-11-08
   @copyright   (c) 2026 by SYNTHETIXMIND LTD
 -->
 
 # SynthLauncher — Tools
 
-Every tool that SynthLauncher installs, updates and opens, with its download link, icon and checksums.
+Every tool that SynthLauncher installs, updates and opens, with its download link, icon, checksums and Chocolatey install command.
 
-**Source of truth:** the signed catalog `https://synthetixmind.com/downloads/catalog.json` (copy: `C:\GitHub\SynthTools\catalog.json`, generated 2026-11-07T17:15:44Z).
-**Last checked:** 2026-11-07. Every installer, `.sha256` file and icon below answered HTTP 200. Every downloaded installer and icon matched the size and SHA-256 in the catalog exactly, and the live catalog is byte-identical to the SynthTools copy.
+**Source of truth:** the signed catalog `https://synthetixmind.com/downloads/catalog.json` (copy: `C:\GitHub\SynthTools\catalog.json`, generated 2026-11-08T15:30:20Z).
+**Last checked:** 2026-11-07 for SynthLauncher, SynthKeys, SynthSize, SynthDiff and SynthWorks: every installer, `.sha256` file and icon answered HTTP 200 and matched the size and SHA-256 in the catalog exactly. SynthChoco was added on 2026-11-08; its catalog entry, checksums and icon come from the signed SynthTools copy, and its Chocolatey package is listed in the repository.
 
 ## Overview
 
@@ -26,8 +26,36 @@ Every tool that SynthLauncher installs, updates and opens, with its download lin
 | [SynthSize](#synthsize) | 0.2.0 | 2026-10-26 | Utilities | 1,288,268 bytes | Shows what fills your drives |
 | [SynthDiff](#synthdiff) | 0.1.0 | 2026-10-26 | Utilities | 1,255,923 bytes | Compares two folders and shows what differs |
 | [SynthWorks](#synthworks) | 0.2.1 | 2026-11-07 | Developer Tools | 2,164,058 bytes | Slim workspace for project folders with terminals and editor |
+| [SynthChoco](#synthchoco) | 0.3.1 | 2026-11-08 | Utilities, Developer Tools | 1,431,730 bytes | Manage Chocolatey packages in one window |
 
 All tools: Windows 10/11 64-bit, per-user NSIS installer (no admin rights), publisher SYNTHETIXMIND LTD, proprietary free download.
+
+## Install with Chocolatey
+
+Every tool is also a Chocolatey package in the SYNTHETIXMIND repository (Nexus NuGet repository `synthetixmind`, `https://repo.synthetixmind.com/repository/synthetixmind/`). The package carries the same installer as the download, checks its SHA-256 before running it and installs silently. Chocolatey needs an elevated PowerShell.
+
+Add the repository once:
+
+```powershell
+choco source add --name=synthetixmind --source="https://repo.synthetixmind.com/repository/synthetixmind/"
+```
+
+Then install a tool:
+
+| Tool | Package id | Install command |
+|------|------------|-----------------|
+| SynthLauncher | `synthlauncher` | `choco install synthlauncher -y --source=synthetixmind` |
+| SynthKeys | `synthkeys` | `choco install synthkeys -y --source=synthetixmind` |
+| SynthSize | `synthsize` | `choco install synthsize -y --source=synthetixmind` |
+| SynthDiff | `synthdiff` | `choco install synthdiff -y --source=synthetixmind` |
+| SynthWorks | `synthworks` | `choco install synthworks -y --source=synthetixmind` |
+| SynthChoco | `synthchoco` | `choco install synthchoco -y --source=synthetixmind` |
+
+- Update: `choco upgrade <id> -y --source=synthetixmind`. Remove: `choco uninstall <id> -y`.
+- All at once: `choco install synthlauncher synthkeys synthsize synthdiff synthworks synthchoco -y --source=synthetixmind`.
+- Without adding the repository, pass the URL instead: `choco install synthworks -y --source="https://repo.synthetixmind.com/repository/synthetixmind/"`.
+- SynthChoco shows the repository as its own **SYNTHETIXMIND** view with Install and Update buttons once it's added.
+- The installers are per-user, so Chocolatey installs the tool for the Windows account that runs the elevated shell.
 
 ## Download names
 
@@ -59,6 +87,7 @@ If Windows Defender blocks or slows down a tool, exclude its install folder. Eve
 | SynthSize | `Add-MpPreference -ExclusionPath (Join-Path $env:LOCALAPPDATA 'SynthSize')` |
 | SynthDiff | `Add-MpPreference -ExclusionPath (Join-Path $env:LOCALAPPDATA 'SynthDiff')` |
 | SynthWorks | `Add-MpPreference -ExclusionPath (Join-Path $env:LOCALAPPDATA 'SynthWorks')` |
+| SynthChoco | `Add-MpPreference -ExclusionPath (Join-Path $env:LOCALAPPDATA 'SynthChoco')` |
 
 - Show all exceptions: `(Get-MpPreference).ExclusionPath`
 - Remove one again: the same line with `Remove-MpPreference` instead of `Add-MpPreference`.
@@ -81,6 +110,7 @@ If Windows Defender blocks or slows down a tool, exclude its install folder. Eve
 | Icon | https://synthetixmind.com/downloads/SynthLauncher/icon.png |
 | Icon SHA-256 | `bb818e3ed51ab21f290329475d1eaef83297b8136757bd527f6d5f93e1f9639c` |
 | Product page | https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthLauncher |
+| Chocolatey | `choco install synthlauncher -y --source=synthetixmind` |
 
 SynthLauncher is one window for every SYNTHETIXMIND SynthTool on Windows. It lists every tool, shows which ones are installed and in which version, and offers the right action for each: Install, Update, Open or Uninstall.
 
@@ -115,6 +145,7 @@ Release notes 0.1.1:
 | Icon | https://synthetixmind.com/downloads/SynthKeys/icon.png |
 | Icon SHA-256 | `d1b5c80364afbfd5ee09b7b9fc52b293cd71626ff7c658d2fbeeb2a4b2d617c4` |
 | Product page | https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthKeys |
+| Chocolatey | `choco install synthkeys -y --source=synthetixmind` |
 
 Type a short trigger such as `#sig` in any app, and SynthKeys replaces it with your signature, phrase or template. It runs as a tray app with an editor (groups, search, live preview) and works in mail, chat, browser and office apps alike.
 
@@ -148,6 +179,7 @@ Release notes 1.0.1:
 | Icon | https://synthetixmind.com/downloads/SynthSize/icon.png |
 | Icon SHA-256 | `fd23e115d91da81809156841f024cc8594308e0f76a998a9f8b7f3b1fc290bd9` |
 | Product page | https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthSize |
+| Chocolatey | `choco install synthsize -y --source=synthetixmind` |
 
 SynthSize lists every drive with its free and total space. Pick one, or type any folder or UNC path, and it scans the tree in parallel. It shows each folder's size, file and folder counts, share of its parent and newest change, largest first, and lets you act on the biggest items right from the result.
 
@@ -177,6 +209,7 @@ Release notes 0.2.0:
 | Icon | https://synthetixmind.com/downloads/SynthDiff/icon.png |
 | Icon SHA-256 | `e2b4880223727a3f407be39e5daab54b5636f2658661d186cba341f7e020a69c` |
 | Product page | https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthDiff |
+| Chocolatey | `choco install synthdiff -y --source=synthetixmind` |
 
 Pick two folders and SynthDiff marks every file and folder as Same, Different, Only left, Only right or File vs folder. You can copy, move or delete items straight from the list, one or many at a time.
 
@@ -207,6 +240,7 @@ Release notes 0.1.0:
 | Icon | https://synthetixmind.com/downloads/SynthWorks/icon.png |
 | Icon SHA-256 | `8813e0c12e3abba8fb942a4b1b7c57f314a9383c6c700480cd80304deb4830f5` |
 | Product page | https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthWorks |
+| Chocolatey | `choco install synthworks -y --source=synthetixmind` |
 
 SynthWorks keeps your project folders (Workfolders) in a sidebar and opens each one in its own tab with PowerShell terminals, Claude Code buttons, a file panel and a basic editor. Requires PowerShell 7 (pwsh) for the terminals.
 
@@ -223,10 +257,46 @@ Release notes 0.2.1:
 
 ---
 
+## SynthChoco
+
+**Manage Chocolatey packages in one window**
+
+| | |
+|---|---|
+| Version | 0.3.1 (2026-11-08) |
+| Installer | https://synthetixmind.com/downloads/SynthChoco/SynthChoco_x64-setup.exe |
+| SHA-256 file | https://synthetixmind.com/downloads/SynthChoco/SynthChoco_x64-setup.exe.sha256 |
+| SHA-256 | `4addbe50ec36eb409f2b8886c7abd2081ea07ebf750b5c5bc8b05001c78bf5c2` |
+| Size | 1.4 MB (1,431,730 bytes) |
+| Icon | https://synthetixmind.com/downloads/SynthChoco/icon.png |
+| Icon SHA-256 | `dd76012489699a4a36a8434d00c51ec624d3997d19900852e73159a12af64e80` |
+| Product page | https://synthetixmind.com/pages/tools.php?utm_source=SynthLauncher&utm_medium=app&utm_campaign=SynthChoco |
+| Chocolatey | `choco install synthchoco -y --source=synthetixmind` |
+
+SynthChoco is a Windows app for Chocolatey. It installs, updates, removes and scans software packages from one window, and its console shows every choco command and every line of output as it runs. Requires Chocolatey 2.x (SynthChoco can install it with one click).
+
+- **Welcome screen:** Chocolatey status and version, one-click Chocolatey install, number of installed and outdated packages.
+- **Installed, outdated, find:** every package with its version, new versions marked, search across all repositories, install one or many, Upgrade all. Install and upgrade always run with `-y`.
+- **SYNTHETIXMIND view:** once the SYNTHETIXMIND repository is added, every package on it with Install and Update.
+- **Repositories:** list, add, enable, disable, remove; the SYNTHETIXMIND repository in one click.
+- **Export and import:** package list to `packages.config` and back; import installs only the missing packages and keeps nothing but id and version from the file.
+- **Defender scan:** sends a package folder and its install folder to Windows Defender.
+- **Live console:** queued, coloured, cancellable; hidden by default, switched on in Settings next to the light/dark theme.
+- **Administrator rights:** lists, search, export and scans work as a standard user; changes need "Restart as administrator".
+
+Release notes 0.3.1:
+- First release: installed, outdated and search views, Upgrade all, live console.
+- Welcome screen with Chocolatey status and one-click Chocolatey install.
+- SYNTHETIXMIND view with every package from the SYNTHETIXMIND repository.
+- Export and import of package lists, Windows Defender scan per package, light and dark theme.
+
+---
+
 ## Keeping this document current
 
 Update this file in the same change as every catalog change (new tool, new version, new checksum, new icon, removed tool):
 1. Take version, date, URL, size, SHA-256, icon URL and icon SHA-256 from the new `catalog.json`. Never type a checksum by hand.
 2. Check every link (HTTP 200), download each installer and icon and compare `Get-FileHash` with the catalog.
-3. Update the overview table, the tool section, "Last checked", and bump `@version` / `@updated`.
-4. Copy the file to `C:\GitHub\SynthTools` together with the catalog.
+3. Push the release to the Chocolatey repository (`projectfiles\scripts\Publish-ChocoPackages.ps1 -Tool <id>`, result "pushed" and "listed in repository: yes"). A new tool gets a row in "Install with Chocolatey" and a Chocolatey row in its section (package id = catalog id).
+4. Update the overview table, the tool section, "Last checked", and bump `@version` / `@updated`.
+5. Copy the file to `C:\GitHub\SynthTools` together with the catalog.
